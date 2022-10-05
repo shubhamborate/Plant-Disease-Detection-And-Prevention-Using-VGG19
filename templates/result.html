@@ -1,0 +1,43 @@
+<!-- "disease_name": "undefined",
+        "supplement name": "null",
+        "supplement image": "null",
+        "buy link": "null" -->
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="result.css" />
+{% endblock %}
+
+{% block body %}
+<div class="container"><img src="../static/sss.jpg" id="right" /></div>
+<!-- <div class="wrapper"> -->
+<div class="heading">PREDICTING THE RESULTS...</div>
+<div class="text">
+  <p><b>The disease detected in the plant is: </b></p>
+  <h1>
+    Name : {{ app_data['disease_name'] }}
+  </h1>
+  <h3>
+    Pesticide for Prevention: {{ app_data['supplement name'] }}
+  </h3>
+
+  <a href="{{app_data['buy link']}}"><img src="{{ app_data['supplement image'] }}"  alt="product image" style="display: block" width="125" height="175" align="center"/>
+  </a>
+  <!-- <a href="">CLICK on link</a> -->
+  <!-- <h1>{{app_data['buy link']}}</h1> -->
+<!-- <h2>
+  <a style="text-decoration:none" color="#013220" alt="Product not found" href="{{ app_data['buy link'] }}" class="btn btn-primary">
+    CLICK HERE TO BUY
+  </a>
+</h2> -->
+</div>
+
+<!-- </div> -->
+<div class="inner">
+  <div id="result"></div>
+</div>
+
+<script src="../static/client.js"></script>
+{% endblock %}
+
+

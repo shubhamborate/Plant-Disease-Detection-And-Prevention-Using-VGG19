@@ -1,0 +1,27 @@
+{% extends 'layout.html' %} 
+{% block body %}
+
+<div class="container"><img src="../static/sss.jpg" id="right" /></div>
+<!-- <div class="wrapper"> -->
+<div class="heading">Grapes Disease Detection</div>
+<div class="text">
+  <p><b> <span> Upload a picture of a Plant and get immediate results!  </span></b></p>
+</div>
+<!-- </div> -->
+<div class="inner">
+  <form id="analysis-form" enctype="multipart/form-data">
+    <div class="imgbox">
+      <img src="../static/img.jpg" class="img" id="selected_image" />
+      <div class="middle">
+        <div class="add"><span class="siz">SELECT IMAGE</span></div>
+        <input name="Select File" id="imagefile" width="100%"   type="file" />
+      </div>
+    </div>
+    <button id="analyze-button" class="analyze-button">
+      <span>Predict</span>
+    </button>
+  </form>
+</div>
+
+<script src="../static/client.js"></script>
+{% endblock %}
