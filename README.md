@@ -112,9 +112,8 @@ Knowing if the plant is suffering with a disease we can conclude which pesticide
 
 ## Contributors
 
-[Samridhi](https://github.com/samridhikapoor)
-
-[Arya](https://github.com/arya312)
+Shubham Dattatray Borate
+Rajarambapu Institute of technology Rajaramnagar Sangli 
 
 
 ## Conclusion 
